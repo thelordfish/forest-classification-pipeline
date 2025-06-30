@@ -64,3 +64,48 @@ To get started, clone this repository:
 ```bash
 git clone https://github.com/YOURUSERNAME/forest-classification-pipeline.git
 cd forest-classification-pipeline
+
+Create a virtual environment if you wish, then install the required packages:
+
+pip install -r requirements.txt
+
+You will also need to configure your own Google Cloud OAuth credentials (credentials.json) if you wish to use the Google Drive export-checking features.
+
+## Usage
+
+Each script in src/ and scripts/ can be run independently. Open each file to see comments describing their purpose, input files, and output.
+
+For example, to run the DBSCAN clustering of dominant forest types, you would use:
+
+python src/cluster_forest_types.py
+
+If you want to check for missing data chunks from Google Earth Engine exports, locally, run:
+
+python scripts/findwhereleftoff.py
+
+If you want to use the Google Drive API to check this without downloading your Google Earth Engine outputs (recommended), run:
+
+python scripts/findwhereleftoff_drive_api.py
+
+## Data
+This repository does not include the full Finland/Sweden National Forest Inventory datasets due to licensing. Please use your own harmonised plot CSVs if you wish to reproduce the results.
+
+Any included data samples are anonymised or purely for demonstration.
+
+##Acknowledgements
+
+Special thanks to the author and  maintainer of PlotToSat, Dr Milto Miltiadou, the Google Earth Engine community, and open-source contributors who make large-scale ecological monitoring possible.
+
+References
+The approach was inspired by published work in tree species classification with Sentinel data, including:
+
+Miltiadou et al., IGARSS 2024
+
+Immitzer et al., 2012
+
+Ball et al., 2017
+
+various sources listed in the dissertation (see references folder when I get round to including it!)
+
+License
+MIT License (or your choice)
