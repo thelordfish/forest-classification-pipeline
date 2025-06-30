@@ -14,6 +14,11 @@ Accurate, frequent monitoring of these changes is essential to inform management
 
 While ground-based surveys offer high accuracy, they are expensive and limited in scale. Remote sensing, especially with the free and frequent imagery from Sentinel satellites, provides a promising alternative — but faces problems with cloud interference and mixed-pixel contamination. This project explores how time-series classification methods, combined with spatial clustering and careful feature engineering of SAR data, can help overcome these issues.  
 
+## Map of Plot Distribution
+
+![Forest type distribution](assets/map3.png)
+
+
 ## Overview of This Repository
 
 This repository contains updates from the pipeline I am developing, organised into the following areas:
