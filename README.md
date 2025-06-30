@@ -16,7 +16,7 @@ While ground-based surveys offer high accuracy, they are expensive and limited i
 
 ## Map of Plot Distribution
 
-![Forest type distribution](assets/map3.png)
+![Forest type distribution](map3.png)
 
 
 ## Overview of This Repository
