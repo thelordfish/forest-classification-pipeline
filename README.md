@@ -69,11 +69,11 @@ To get started, clone this repository:
 ```bash
 git clone https://github.com/YOURUSERNAME/forest-classification-pipeline.git
 cd forest-classification-pipeline
-
+```
 Create a virtual environment if you wish, then install the required packages:
-
+```bash
 pip install -r requirements.txt
-
+```
 You will also need to configure your own Google Cloud OAuth credentials (credentials.json) if you wish to use the Google Drive export-checking features.
 
 ## Usage
@@ -81,17 +81,17 @@ You will also need to configure your own Google Cloud OAuth credentials (credent
 Each script in src/ and scripts/ can be run independently. Open each file to see comments describing their purpose, input files, and output.
 
 For example, to run the DBSCAN clustering of dominant forest types, you would use:
-
+```bash
 python src/cluster_forest_types.py
-
+```
 If you want to check for missing data chunks from Google Earth Engine exports, locally, run:
 
 python scripts/findwhereleftoff.py
 
 If you want to use the Google Drive API to check this without downloading your Google Earth Engine outputs (recommended), run:
-
+```bash
 python scripts/findwhereleftoff_drive_api.py
-
+```
 ## Data
 This repository does not include the full Finland/Sweden National Forest Inventory datasets due to licensing. Please use your own harmonised plot CSVs if you wish to reproduce the results.
 
