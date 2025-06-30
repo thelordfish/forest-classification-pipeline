@@ -23,27 +23,30 @@ While ground-based surveys offer high accuracy, they are expensive and limited i
 ![Forest type distribution](map3.png)
 
 
-## Overview of This Repository
+## Repository Organisation
 
-This repository contains updates from the pipeline I am developing, organised into the following areas:
+This repository is organised into the following areas:
 
-- **src/**  
-  Will contain the main project code, including:
-  - scripts for clustering forest plots by dominant forest type using DBSCAN  
-  - tools to prepare time-series data for machine learning  
-  - experiments with classification models including Random Forests, Canonical Interval Forest, RNNs, and LSTMs  
-  - my config for PlotToSat to merge ground-survey data with extracted satellite features from Google Earth Engine
+- **clustering_pipeline/**  
+  Contains scripts for:
+  - clustering forest plots by dominant forest type using DBSCAN  
+  - preparing time-series datasets for classification  
+  - experiments with classifiers including Random Forests, Canonical Interval Forest, RNNs, and LSTMs
 
-- **scripts/**  
-  A set of supporting scripts to help with:
-  - preparing CSVs for PlotToSat and other tools  
+- **gee_plottosat_tools/**  
+  Contains supporting tools for:
   - checking and tracking chunk-based Google Earth Engine exports  
-  - performing quality checks on shapefiles  
-  - renaming and organising large folders of satellite data
+  - working with Google Drive (without local downloads)  
+  - preparing CSVs for PlotToSat  
+  - performing shapefile quality checks
 
 - **data/** (optional)  
   This folder can contain a *small*, anonymised sample dataset to demonstrate the code structure, but not the full NFI data, which is subject to licensing.
 
+- **assets/**  
+  Images, plots, and diagrams used in documentation.
+
+---
 ## Features
 
 Some of the key features of the pipeline include:  
@@ -114,7 +117,4 @@ Immitzer et al., 2012
 
 Ball et al., 2017
 
-various sources listed in the dissertation (see references folder when I get round to including it!)
 
-License
-MIT License (or your choice)
