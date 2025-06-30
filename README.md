@@ -1,7 +1,11 @@
 # forest-classification-pipeline
 # Forest Classification Pipeline
 
-Welcome to the *Forest Classification Pipeline*, developed as part of my MSc Computer Science dissertation at the University of Exeter. This repository supports research into classifying boreal forest types in Finland and Sweden by combining National Forest Inventory (NFI) ground-survey data with satellite imagery from Sentinel-1 and Sentinel-2.  
+Welcome to the *Forest Classification Pipeline*, developed as part of my MSc Computer Science dissertation at the University of Exeter.
+
+This is a work-in-progress, and currently unfinished. I will upload scripts I write as I go that may help others in creating a similar or identical pipeline for forest classification using plot data and sentinel 1 and 2 satellite data.
+
+This repository supports research into classifying boreal forest types in Finland and Sweden by combining National Forest Inventory (NFI) ground-survey data with satellite imagery from Sentinel-1 and Sentinel-2.  
 
 The aim of the project is to build a scalable, reproducible, and open-source workflow for classifying and monitoring forest types at a landscape scale. 
 The pipeline focuses on overcoming typical challenges in boreal satellite-based classification, including heavy cloud cover, noisy radar data, mixed-pixel effects, and the integration of time-series data across multiple seasons.  
